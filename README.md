@@ -1,5 +1,5 @@
 # web-340
 Node JS
 # Contributors
-- Professor Krasso - Bellevue University
+- Professor Massoud - Bellevue University
 - Jonathan Disla - Bellevue University
