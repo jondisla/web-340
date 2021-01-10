@@ -1,6 +1,6 @@
 /*
 ============================================
-; Title:  Exercise 1.2
+; Title:  Exercise 1.3
 ; Author: Professor Massoud
 ; Date:   7 January 2021
 ; Modified By: Jonathan Disla
