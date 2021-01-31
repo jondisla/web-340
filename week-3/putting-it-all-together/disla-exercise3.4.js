@@ -20,7 +20,6 @@ console.log(header.display("Jonathan", "Disla", "Exercise 3.4"));
 BEGIN ASSIGNMENT
 ===============================================
 */
-
 //require the modules to be used
 var express = require('express');
 var http = require('http');
