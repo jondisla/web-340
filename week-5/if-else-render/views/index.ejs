@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container" role = "main">
+        <br/><br/>
+
+        <h2>Names List</h2>
+        <ul>
+        <% if (names.length > 0){ %>
+            <% for(var k = 0; k < names.length; k++){ %>
+                <p><%= names[k] %></p>
+            <% } %>
+        <% } %>
+        </ul>
+    </div>
+</body>
+</html>
