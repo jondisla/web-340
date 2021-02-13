@@ -1,0 +1,11 @@
+{
+    "name": "mongoose-connection",
+    "author": "Jonathan Disla",
+    "verion": "0.0.1",
+    "private": true,
+    "dependencies": {
+        "express": "^4.17.1",
+        "mongoose": "^5.11.16",
+        "morgan": "^1.10.0"
+    }
+}
