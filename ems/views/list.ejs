@@ -1,0 +1,38 @@
+<div class="list-group">
+    <!-- Default panel contents -->
+    <div class="list-heading"><%= title %></div>
+  
+    <!-- Table -->
+    <table class="table">
+      <tr>
+          <th>Name</th>
+          <th>Position</th>
+          <th>Contact</th>
+          <th>Actions</th>
+      </tr>
+      <tr>
+          <% if (employees.length > 0) { %> 
+            
+            <td>John Disla</td>
+            <td>Web Developer</td>
+            <td>email@gmail.com</td>
+            <td><i class="fa fa-pencil" aria-hidden="true">  <i class="fa fa-times" aria-hidden="true"></i></i></td>
+            
+        <% } else { %>
+            <p>There are no employees to display.</p>
+        <% } %>
+      </tr>
+      <tr>
+          <% if (employees.length > 0) { %> 
+            
+            <td>John Disla</td>
+            <td>Web Developer</td>
+            <td>email@gmail.com</td>
+            <td><i class="fa fa-pencil" aria-hidden="true">  <i class="fa fa-times" aria-hidden="true"></i></i></td>
+            
+        <% } else { %>
+            <p>There are no employees to display.</p>
+        <% } %>
+      </tr>
+      
+    </table>
