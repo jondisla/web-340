@@ -1,3 +1,13 @@
+/*
+============================================
+; Title:  app.js
+; Author: Professor Massoud
+; Date:   21 February 2020
+; Modified By: Jonathan Disla
+; Description: server and database connection
+;===========================================
+*/
+
 var express = require("express");
 var http = require("http");
 var logger = require("morgan");
@@ -21,8 +31,8 @@ app.use(logger("short"));
 
 //Mongo connection
 mongoose
-  .connect("mongodb+srv://jondisla:@Brownie01@cluster0.lti6z.mongodb.net", {
-    dbName: "emsDB",
+  .connect("mongodb+srv://jondisla:<pass>01@cluster0.lti6z.mongodb.net", {
+    dbName: "<dbname>",
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
