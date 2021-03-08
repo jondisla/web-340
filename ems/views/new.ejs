@@ -1,30 +1,32 @@
 <!-- @format -->
-<%- include('header.ejs') %> 
-<%- include('navbar.ejs') %>
+<%- include('./include/_header') %> <%- include('./include/_navbar') %>
 
-
-<div role="main" class="container">
-  <br /><br />
-
-  <h2><%= message %></h2>
-
-  <form method="post" action="/process">
+<div class="container">
+  <h2 class="text-center">Add Record</h2>
+  <form action="/api/users" method="POST">
     <div class="form-group">
-      <input type="text" name="txtName" id="txtName" />
-    </div>
-
-    <div class="form-group">
-      <!-- CSRF token -->
-
+      <label for="fname">First Name</label>
       <input
-        type="hidden"
-        name=""
-        name="csrf"
-        value="<%= csrfToken %>"
-      /><button class="btn btn-primary float-right">Submit</button>
+        type="text"
+        class="form-control"
+        name="fname"
+        id="fname"
+        aria-describedby="helpId"
+        placeholder="Jon"
+      />
     </div>
+    <div class="form-group">
+      <label for="lname">Last Name</label>
+      <input
+        type="text"
+        class="form-control"
+        name="lname"
+        id="lname"
+        aria-describedby="helpId"
+        placeholder="Doe"
+      />
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
   </form>
 </div>
-
-
-<%- include ('footer.ejs') %>
+<%- include('./include/_footer') %>

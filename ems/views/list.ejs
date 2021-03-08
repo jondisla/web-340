@@ -1,36 +1,23 @@
 <!-- @format -->
 
-<div class="list-group">
-  <!-- Default panel contents -->
-  <div class="list-heading"></div>
-
-  <!-- Table -->
+<div class="container">
+  <a href="/new" type="button" class="btn btn-primary">
+    <i class="fa fa-pencil" aria-hidden="true"> Add New</i></a
+  >
   <table class="table">
-    <tr>
-      <th>Name</th>
-      <th>Position</th>
-      <th>Contact</th>
-      <th>Actions</th>
-    </tr>
-    <tr>
-      <td>John Disla</td>
-      <td>Web Developer</td>
-      <td>email@gmail.com</td>
-      <td>
-        <i class="fa fa-pencil" aria-hidden="true">
-          <i class="fa fa-times" aria-hidden="true"></i
-        ></i>
-      </td>
-    </tr>
-    <tr>
-      <td>John Disla</td>
-      <td>Web Developer</td>
-      <td>email@gmail.com</td>
-      <td>
-        <i class="fa fa-pencil" aria-hidden="true">
-          <i class="fa fa-times" aria-hidden="true"></i
-        ></i>
-      </td>
-    </tr>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% for(var i = 0; i < users.length; i++){ %>
+      <tr>
+        <td><%= i + 1 %></td>
+        <td><%= users[i].fname %> <%= users[i].lname %></td>
+      </tr>
+      <% } %>
+    </tbody>
   </table>
 </div>

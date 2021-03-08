@@ -1,7 +1,5 @@
-<!-- @format -->
-
-<%- include('header.ejs') %> <%- include('navbar.ejs') %>
-
-<a href="new"><button class="btn btn-primary">Add New</button></a>
-
-<%- include('list.ejs') %> <%- include ('footer.ejs') %>
+<%- include('./include/_header') %>
+<%- include('./include/_navbar') %>
+<h1 class="text-center"> Employee Management System</h1>
+<%- include('list') %>
+<%- include('./include/_footer') %>
